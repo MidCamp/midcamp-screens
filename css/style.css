@@ -1,52 +1,39 @@
 html {
-    background: white;
-    border-top: 10px solid #0274BB;
+    background: #f8f6f4;
     color: #333333;
-    font-family: "proxima-nova",Avenir,"Helvetica Neue",sans-serif;
-    font-size: 36px;
+    font-family: "Raleway",sans-serif;
     font-weight: 400;
     line-height: 1.5em;
 }
 
 body {
     background: inherit;
+    font-size: 36px;
     margin: 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #0274BB;
-    font-family: "adelle",Georgia,serif;
+    color: #0084b2;
+    font-family: "Raleway",sans-serif;
     font-weight: 700;
     margin-top: 0;
     line-height: 1em;
 }
 
-h1 {
-    color: #333333;
-}
-
 h1.big {
-    font-size: 6em;
+    font-size: 2.33em;
 }
 
 h2.big {
-    font-size: 3em;
+    font-size: 1.17em;
 }
 
 h2.bigger {
-    font-size: 4em;
+    font-size: 1.6em;
 }
 
 h2.biggest {
-    font-size: 6em;
-}
-
-p.big {
-    font-size: 2em;
-}
-
-p.biggest {
-    font-size: 3em;
+    font-size: 2.33em;
 }
 
 a:link, a:visited, a:active {
@@ -69,15 +56,12 @@ table {
 }
 
 img.logo {
-    margin: 3em auto;
-    padding-top: 8em;
-    text-align: center;
-    width: 100%
+    margin: 1.2em auto;
+    width: 250px;
 }
 
-img.center {
+.center {
     text-align: center;
-    padding-top: 2em;
 }
 
 #carousel .item {
@@ -86,125 +70,4 @@ img.center {
 
 .center h1, .center h2, .center h3, .center p {
     text-align: center;
-}
-
-.block {
-    background: none repeat scroll 0 0 #F5F5F5;
-    border: 1px solid #999999;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: 1px 1px 3px 1px rgba(51, 51, 51, 0.1);
-    color: #333333;
-    font-size: 1.5em;
-    line-height: 1.25em;
-    margin-bottom: 0.75em;
-    padding: 1.5em;
-}
-
-.block.blue {
-    background-color: rgba(2, 116, 187, 0.1);
-    border-color: #0274BB;
-}
-
-.block.green {
-    background-color: rgba(116, 187, 2, 0.1);
-    border-color: #74BB02;
-}
-
-#lead-slide h1 {
-    font-size: 6em;
-}
-
-#lead-slide h2 {
-    font-size: 3em;
-    line-height: 1em;
-    margin: 2em;
-}
-
-#sponsors {
-    padding: 4em 0;
-}
-
-#sponsors p {
-    margin: 2em;
-    text-align: justify;
-    font-size: 3em;
-}
-
-#straight-north {
-    padding: 6em 0;
-}
-
-#straight-north img {
-    margin: 6em auto;
-    width: 600px;
-}
-
-#sponsors-gold td {
-    padding: 2em 6em;
-}
-
-#sponsors-gold td img {
-    width: 100%;
-}
-
-#sponsors-silver {
-    padding: 3em 0;
-}
-
-#sponsors-silver td {
-    padding: 2em;
-    text-align: center;
-}
-
-#sponsors-silver td img {
-    max-height: 200px;
-}
-
-#sponsors-community {
-    padding: 2em 0;
-}
-
-#sponsors-community td {
-    padding: 2em;
-    text-align: center;
-}
-
-#sponsors-community img {
-    max-height: 200px;
-    max-width: 400px;
-}
-
-#giveaways td {
-    padding: 2em;
-    text-align: center;
-}
-
-#giveaways img {
-    max-height: 200px;
-    max-width: 400px;
-}
-
-#schedule {
-    padding: 4em 0;
-}
-
-#schedule ul {
-    margin-top: 2em;
-}
-
-#schedule ul li {
-    font-size: 3em;
-    line-height: 1.5em;
-}
-
-#twitter .twitter-timeline-rendered {
-    width: 100%;
-}
-
-#twitter .block {
-    font-size: 1.8em;
-}
-
-#twitter p img {
-    width: 100%;
 }
