@@ -63,7 +63,7 @@
 
     var addSchedule = function (item) {
         $.ajax({
-            dataType: "json",
+            dataType: "jsonp",
             url: scheduleUrl,
             success: function (data) {
                 if (typeof(data.content) == 'undefined') {
@@ -80,7 +80,7 @@
 
     var addSponsors = function (item) {
         $.ajax({
-            dataType: "json",
+            dataType: "jsonp",
             url: sponsorsUrl,
             success: function (data) {
                 addSlide(goldSponsors(data), item);
