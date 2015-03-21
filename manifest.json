@@ -3,30 +3,42 @@
         "id": "title",
         "type": "html",
         "active": 1,
-        "interval": 3000
+        "interval": 8000
     },
     {
         "id": "schedule",
         "type": "schedule",
         "active": 1,
-        "interval": 3000
+        "interval": 8000
     },
     {
         "id": "sponsors",
         "type": "sponsors",
         "active": 1,
-        "interval": 3000
+        "interval": 8000
+    },
+    {
+        "id": "schedule",
+        "type": "schedule",
+        "active": 1,
+        "interval": 8000
     },
     {
         "id": "wifi",
         "type": "html",
         "active": 1,
-        "interval": 3000
+        "interval": 8000
     },
     {
         "id": "twitter",
         "type": "html",
         "active": 1,
-        "interval": 3000
+        "interval": 8000
+    },
+    {
+        "id": "schedule",
+        "type": "schedule",
+        "active": 1,
+        "interval": 8000
     }
 ]

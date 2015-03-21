@@ -1,6 +1,7 @@
 (function($) {
 
 
+    var proccessQueue = [];
     var manifest = [];
     var carousel = null;
     var scheduleUrl = 'http://localhost:8888/midcamp2015/docroot/screens/next';
@@ -17,15 +18,25 @@
     var getManifest = function() {
         $.getJSON("manifest.json", function(data) {
             $.each(data, function() {
-                processManifest(this);
+                proccessQueue.push(this);
             });
+            processManifest();
         });
     }
 
-    var processManifest = function(item) {
+    var processManifest = function() {
+
+        console.log(proccessQueue);
+        item = proccessQueue.shift();
+        console.log(item);
+        if (!item) {
+            return;
+        }
+
         if (item.active != 1) {
             return;
         }
+
         switch (item.type) {
             case 'html':
                 addHtml(item);
@@ -45,6 +56,7 @@
             url: "screens/" + item.id + ".html",
             success: function(data) {
                 addSlide(data, item);
+                processManifest();
             }
         });
     }
@@ -61,6 +73,7 @@
                 content = "<h1 class=\"center big\">" + data.title + "</h1>" + content;
                 content = "<div class='item schedule'>" + content + "</div>";
                 addSlide(content, item);
+                processManifest();
             }
         });
     }
@@ -72,6 +85,7 @@
             success: function (data) {
                 addSlide(goldSponsors(data), item);
                 addSlide(silverSponsors(data), item);
+                processManifest();
             }
         });
     }
