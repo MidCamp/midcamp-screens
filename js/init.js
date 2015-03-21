@@ -4,8 +4,8 @@
     var proccessQueue = [];
     var manifest = [];
     var carousel = null;
-    var scheduleUrl = 'http://localhost:8888/midcamp2015/docroot/screens/next';
-    var sponsorsUrl = 'http://localhost:8888/midcamp2015/docroot/screens/sponsors';
+    var scheduleUrl = 'http://2015.midcamp.org/screens/next';
+    var sponsorsUrl = 'http://2015.midcamp.org/screens/sponsors';
 
     var init = function () {
         carousel = $("#carousel").carousel({interval: false});
