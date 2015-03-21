@@ -2,6 +2,7 @@ html {
     background: #f8f6f4;
     color: #333333;
     font-family: "Raleway",sans-serif;
+    font-size: 36px;
     font-weight: 400;
     line-height: 1.5em;
 }
@@ -18,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-top: 0;
     line-height: 1em;
+}
+
+h1 {
+    margin-bottom: 1em;
 }
 
 h1.big {
@@ -70,4 +75,65 @@ img.logo {
 
 .center h1, .center h2, .center h3, .center p {
     text-align: center;
+}
+
+#wifi p {
+    margin-bottom: 1em;
+}
+
+.contextual-links-wrapper {
+    display: none;
+}
+
+.field.field-label-inline .field-label,
+.field.field-label-inline .field-items {
+    float: left;
+}
+
+.schedule {
+    font-size: 24px;
+}
+
+.schedule .views-row {
+    padding: 1em;
+}
+
+.schedule .views-row-odd {
+    background-color: #f0ebe8;
+}
+
+.schedule .field,
+.schedule .field > .field-label {
+    display: none;
+}
+
+.schedule .field.scamp-session-room {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.sponsors-silver h1 {
+    margin-bottom: .7em;
+}
+
+.sponsors img {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.sponsors .sponsor {
+    float: left;
+    height: 150px;
+    padding: .8em .5em;
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sponsors-gold .sponsor {
+    height: 200px;
+    padding: 1em;
+    width: 50%;
 }

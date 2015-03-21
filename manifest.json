@@ -1,0 +1,27 @@
+[
+    {
+        "id": "title",
+        "type": "html",
+        "interval": 3000
+    },
+    {
+        "id": "schedule",
+        "type": "schedule",
+        "interval": 3000
+    },
+    {
+        "id": "sponsors",
+        "type": "sponsors",
+        "interval": 3000
+    },
+    {
+        "id": "wifi",
+        "type": "html",
+        "interval": 3000
+    },
+    {
+        "id": "twitter",
+        "type": "html",
+        "interval": 3000
+    }
+]
