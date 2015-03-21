@@ -23,12 +23,15 @@
     }
 
     var processManifest = function(item) {
+        if (item.active != 1) {
+            return;
+        }
         switch (item.type) {
             case 'html':
-//                addHtml(item);
+                addHtml(item);
                 break;
             case 'schedule':
-//                addSchedule(item);
+                addSchedule(item);
                 break;
             case 'sponsors':
                 addSponsors(item);
@@ -51,7 +54,7 @@
             dataType: "json",
             url: scheduleUrl,
             success: function (data) {
-                if (data.content === undefined) {
+                if (typeof(data.content) == 'undefined') {
                     return;
                 }
                 content = data.content;

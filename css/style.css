@@ -45,6 +45,10 @@ a:link, a:visited, a:active {
     color: #0274BB;
 }
 
+p {
+    line-height: 1.2em;
+}
+
 table {
     width: 100%;
 }
@@ -136,4 +140,8 @@ img.logo {
     height: 200px;
     padding: 1em;
     width: 50%;
+}
+
+.sponsors-silver .sponsor:nth-of-type(7) {
+    margin-left: 25%;
 }
