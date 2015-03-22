@@ -26,14 +26,14 @@
 
     var processManifest = function() {
 
-        console.log(proccessQueue);
-        item = proccessQueue.shift();
-        console.log(item);
-        if (!item) {
+        if (proccessQueue.length < 1) {
             return;
         }
 
+        item = proccessQueue.shift();
+
         if (item.active != 1) {
+            processManifest();
             return;
         }
 
@@ -47,6 +47,8 @@
             case 'sponsors':
                 addSponsors(item);
                 break;
+            default:
+                processManifest();
         }
     };
 
@@ -67,6 +69,7 @@
             url: scheduleUrl,
             success: function (data) {
                 if (typeof(data.content) == 'undefined') {
+                    processManifest();
                     return;
                 }
                 content = data.content;
